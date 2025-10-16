@@ -7529,7 +7529,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Project-Goal:-The-objective-of-this-project-is-to-develop-a-computational-pipeline-to-quantify-and-predict-the-extent-of-fibrosis-in-a-mouse-model-of-IPF-to-guide-development-of-a-better-lung-biopsy-device.">Project Goal: The objective of this project is to develop a computational pipeline to quantify and predict the extent of fibrosis in a mouse model of IPF to guide development of a better lung biopsy device.<a class="anchor-link" href="#Project-Goal:-The-objective-of-this-project-is-to-develop-a-computational-pipeline-to-quantify-and-predict-the-extent-of-fibrosis-in-a-mouse-model-of-IPF-to-guide-development-of-a-better-lung-biopsy-device.">¶</a></h2>
+<h2 id="Project-Goal:">Project Goal:<a class="anchor-link" href="#Project-Goal:">¶</a></h2><p>The objective of this project is to develop a computational pipeline to quantify and predict the extent of fibrosis in a mouse model of IPF to guide development of a better lung biopsy device.</p>
 </div>
 </div>
 </div>
@@ -7623,7 +7623,7 @@ a.anchor-link {
 <h2 id="Data-Analyis:">Data Analyis:<a class="anchor-link" href="#Data-Analyis:">¶</a></h2><p><em>(Describe how you analyzed the data. This is where you should intersperse your Python code so that anyone reading this can run your code to perform the analysis that you did, generate your figures, etc.)</em></p>
 <p>First, we used edge detection and contour detection to find blood vessels / airways to remove from analysis- as there is no tissue in the lumen, it should not be considered in our analysis. We used manual_contours_subset.ipynb, which contained methods of dilation, erosion, and contour size-based filtering in order to generate masks of these regions. We stored the area that we generated. Then, we calculated the white pixel percentage in each image while considering the areas or not. Then, we fit 2 generalized linear models to predict white pixel percentage with the depth of the image as the dependent variable. We finally interpolated multiple points using the fitted model.</p>
 <p>Additional analysis was conducted to analyze the difference between slobe and llobe in both white pixel percent and depth; however, MANOVA showed no significant correlation between white pixel percent and any other features (especially depth).</p>
-<p>Below is the analysis.</p>
+<p>Below is the analysis. It is also available <a href="https://github.com/max-calcoen/comp-bme-IPF/">here</a>.</p>
 </div>
 </div>
 </div>
